@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CoWorker Documentation by SemiColon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">CoWorker</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">Start Here</a>
+              </li>
+              <li class="">
+                <a href="./sliders.html">Sliders</a>
+              </li>
+              <li class="">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="active">
+                <a href="./widgets.html">Widgets</a>
+              </li>
+              <li class="">
+                <a href="./extras.html">Extras</a>
+              </li>
+              <li class="">
+                <a href="./credits.html">Credits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>CoWorker <small>/ Widgets</small></h1>
+    <p class="lead">This file will help you setup your Widgets</p>
+  </div>
+</header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#flickrwidget"><i class="icon-chevron-right"></i> Flickr Widget</a></li>
+          <li><a href="#twitterwidget"><i class="icon-chevron-right"></i> Twitter Widget</a></li>
+          <li><a href="#instagramwidget"><i class="icon-chevron-right"></i> Instagram Widget</a></li>
+          <li><a href="#dribbblewidget"><i class="icon-chevron-right"></i> Dribbble Widget</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <section>
+        
+        
+            <h1>Widgets</h1>
+            
+            <p>This Theme supports 11 Unique Widgets such as <code>Flickr</code>, <code>Instagram</code>, <code>Dribbble</code>, <code>Posts</code>, <code>Posts Tabs</code>, <code>Twitter</code>, <code>Links</code>, <code>Portfolio</code>, <code>Testimonials</code>, <code>Video</code>, <code>Slider</code>.</p>
+        
+        
+        </section>
+        
+        
+        <hr class="bs-docs-separator">
+        
+        
+        <section id="flickrwidget">
+        
+        
+            <h1>Flickr Widget</h1>
+            
+            <div class="bs-docs-example">
+            
+<pre class="prettyprint linenums">&lt;div id="flickr_widget-1" class="widget flickr-widget clearfix"&gt;
+
+    &lt;h4 class="widget-title"&gt;Flickr Photostream&lt;/h4&gt;
+    
+    &lt;div id="flickr_widget" class="flickrfeed" data-id="613394@N22" data-count="9" data-type="group"&gt;&lt;/div&gt;
+
+&lt;/div&gt;</pre>
+            
+            </div>
+            
+            <h4>Options:</h4>
+            
+            <ul>
+            
+                <li><code>data-id</code> - Your Flickr User/Group ID, <a href="http://idgettr.com" target="_blank">Get it Here</a></li>
+                <li><code>data-count</code> - Number of Flickr Images to retrieve.</li>
+                <li><code>data-type</code> - Type of Flickr ID, ie. <code>user</code> or <code>group</code></li>
+            
+            </ul>
+        
+
+        </section>
+        
+        
+        <hr class="bs-docs-separator">
+        
+        
+        <section id="twitterwidget">
+        
+        
+            <h1>Twitter Widget</h1>
+            
+<pre class="prettyprint linenums">&lt;div id="twitter_widget-2" class="widget twitter-widget clearfix"&gt;
+
+    &lt;h4 class="widget-title"&gt;Twitter Feed&lt;/h4&gt;
+    
+    &lt;script type="text/javascript"&gt;
+		
+        jQuery(document).ready(function($){
+            $.getJSON('functions/twitter/tweets.php?username=envato&amp;count=2', function(tweets){
+                $("#twitter_list_1").html(sm_format_twitter(tweets));
+            });
+        });
+    
+    &lt;/script&gt;
+    
+    &lt;ul id="twitter_list_1"&gt;
+    
+        &lt;li&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+
+    &lt;a class="twitter-follow-me ntip" href="http://www.twitter.com/envato" title="Follow @envato"&gt;Follow us on Twitter&lt;/a&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;
+
+&lt;/div&gt;</pre>
+            
+            <p>Change <code>username=envato</code> to <code>username=[your-username]</code> and <code>count=2</code> to the number of Tweets you want to display, ie. <code>count=4</code> for 4 Tweets.</p>
+            
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h2>Twitter oAuth Setup for API v1.1</h2>
+            
+            <p>The new Twitter API v1.1 no longer supports unauthenticated User Timeline calls so you'll have to now authenticate to OAuth so that you can show your Twitter Feeds on your Websites. Follow the instructions below to setup your authentication:</p>
+            
+            <ol>
+                <li>Visit <a href="https://dev.twitter.com/apps/" target="_blank">https://dev.twitter.com/apps/</a> and sign in using your Twitter username and password. This doesn't have to be the username or password of the stream you need access to, just a Twitter account you control.</li>
+                <li>Select <code>Create new application</code> and enter the application details.
+                    <ol>
+                        <li>The name and description can be anything you like really, but you can't use 'Twitter' in the name.</li>
+                        <li>The website field can be your main website and doesn't have to be the site where your Twitter feed or feeds are located.</li>
+                        <li>Callback URL can be left blank</li>
+                    </ol>
+                </li>
+                <li>Enter the CAPTCHA info and click create</li>
+                <li>On the next details screen, click <code>Create my access token</code>. You may need to refresh the page after a few seconds if it doesn't appear automatically.</li>
+                <li>Make a note of the Consumer key, Consumer secret, Access token and Access token secret as highlighted below.</li>
+            </ol>
+            
+            <br>
+            <img class="img-polaroid img-rounded" src="assets/img/twitter-feed-authentication.jpg" alt="Twitter Feed OAuth Authentication" title="Twitter Feed OAuth Authentication" style="width: 100%;" />
+            
+            
+            <hr class="bs-docs-separator">
+            
+            
+            <h4>Follow these steps after you create your Twitter APP successfully as described above:</h4>
+            
+            <ol>
+            
+                <li>Open the <code>html/functions/twitter/tweets.php</code> file.</li>
+                <li>Enter your Twitter APP Details as mentioned below:
+                
+<pre class="prettyprint linenums">$consumerkey = ""; // Twitter App - Consumer Key for OAuth
+$consumersecret = ""; // Twitter App - Consumer Secret for OAuth
+$accesstoken = ""; // Twitter App - Access Token for OAuth
+$accesstokensecret = ""; // Twitter App - Access Token Secret for OAuth</pre>and <code>Save</code> the file.</li>
+            
+            </ol>
+            
+            <p><span class="label label-important">Note</span> Remember to set the <code>permissions</code> of the <code>html/functions/twitter/cache</code> folder to <strong>755</strong> so that the Twitter Feed cache files can be saved otherwise your Twitter Feeds won't work.</p>
+        
+
+        </section>
+        
+        
+        <hr class="bs-docs-separator">
+        
+        
+        <section id="instagramwidget">
+        
+        
+            <h1>Instagram Widget</h1>
+            
+            <div class="bs-docs-example">
+            
+<pre class="prettyprint linenums">&lt;div class="widget flickr-widget clearfix"&gt;
+
+    &lt;h4 class="widget-title"&gt;Instagram Photos&lt;/h4&gt;
+    
+    &lt;div class="instagram" data-tag="dribbble" data-count="9" data-type="tag"&gt;&lt;/div&gt;
+
+&lt;/div&gt;</pre>
+            
+            </div>
+            
+            <h4>Options:</h4>
+            
+            <ul>
+            
+                <li><code>data-user</code> - Any valid Instagram Username</li>
+                <li><code>data-tag</code> - Any valid Instagram Tag</li>
+                <li><code>data-count</code> - Number of Instagram Images to retrieve.</li>
+                <li><code>data-type</code> - Type of Query you are making, ie. <code>user</code> or <code>tag</code></li>
+            
+            </ul>
+            
+            <p><span class="label label-important">Note</span> You'll first have to setup your Instagram <code>clientID</code> &amp; <code>accessToken</code> in the <code>html/js/custom.js</code> under <code>$.fn.spectragram.accessData</code>. To get your Instagram <code>clientID</code> &amp; <code>accessToken</code>, please visit <a href="http://instagram.com/developer/" target="_blank">Instagram API Website</a>.</p>
+        
+
+        </section>
+        
+        
+        <hr class="bs-docs-separator">
+        
+        
+        <section id="dribbblewidget">
+        
+        
+            <h1>Dribbble Widget</h1>
+            
+            <div class="bs-docs-example">
+            
+<pre class="prettyprint linenums">&lt;div class="widget flickr-widget clearfix"&gt;
+
+    &lt;h4 class="widget-title"&gt;Dribbble Shots&lt;/h4&gt;
+    
+    &lt;div class="dribbble" data-user="envato" data-count="9" data-type="user"&gt;&lt;/div&gt;
+
+&lt;/div&gt;</pre>
+            
+            </div>
+            
+            <h4>Options:</h4>
+            
+            <ul>
+            
+                <li><code>data-user</code> - Any valid Dribbble Username</li>
+                <li><code>data-list</code> - Type of Dribbble List, ie. <code>popular</code>, <code>everyone</code> or <code>debuts</code></li>
+                <li><code>data-count</code> - Number of Dribbble Shots to retrieve.</li>
+                <li><code>data-type</code> - Type of Query you are making, ie. <code>user</code>, <code>follows</code> or <code>list</code></li>
+            
+            </ul>
+        
+
+        </section>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>CoWorker V1.3</p>
+        <p>Designed by <a href="http://themeforest.net/user/semicolonweb/portfolio?ref=semicolonweb" target="_blank">SemiColon</a></p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+
+  </body>
+</html>
