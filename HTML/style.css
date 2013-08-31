@@ -781,7 +781,7 @@ form small {
 #primary-menu > ul > li.current-menu-ancestor,
 #primary-menu > ul > li.current-menu-parent,
 #primary-menu > ul > li.current-menu-item,
-#primary-menu > ul > li.current_page_parent { background: #BBBBBB; }
+#primary-menu > ul > li.current_page_parent { background: rgba(9, 0, 0, 0.72); }
 
 #primary-menu ul li.current a,
 #primary-menu > ul > li:hover a,
@@ -824,7 +824,7 @@ form small {
 	height: auto;
     border: none;
     background-image: none;
-    background-color: #BBBBBB;
+    background-color: rgba(9, 0, 0, 0.72);
     margin-top: 1px;
 }
 
