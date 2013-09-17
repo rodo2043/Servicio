@@ -3048,9 +3048,9 @@ p.wp-caption-text {
 	border-bottom: 1px solid #555;
 }
 
-.tab_widget ul.tabs li.active { border-top: 3px solid #57B3DF; }
+.tab_widget ul.tabs li.active { border-top: 3px solid #FF9900; }
 
-.tab_widget ul.tabs li.active a { color: #57B3DF; }
+.tab_widget ul.tabs li.active a { color: #FF9900; }
 
 .side-tabs ul.tabs li.active,
 .side-tabs ul.tabs li.active a:hover {
@@ -3060,7 +3060,7 @@ p.wp-caption-text {
 
 .side-tabs ul.tabs li.active {
     border-top: none;
-    border-left: 4px solid #57B3DF;
+    border-left: 4px solid #FF9900;
     margin-right: -1px;
 }
 
@@ -4301,7 +4301,7 @@ body > iframe { display: none; }
 	position: relative;
 	background-color: #EEE;
 	padding: 40px 30px;
-    border-top: 3px solid #57B3DF;
+    border-top: 3px solid #FF9900;
 }
 
 #footer.footer-dark {
@@ -4522,7 +4522,7 @@ a.twitter-follow-me:hover,
 #footer.footer-dark .sposts-list .spost-image { background: #282A2B; }
 
 .sposts-list .spost-image:hover,
-#footer.footer-dark .sposts-list .spost-image:hover { background: #57B3DF; }
+#footer.footer-dark .sposts-list .spost-image:hover { background: #FF9900; }
 
 
 /* ----------------------------------------------------------------
@@ -4718,7 +4718,7 @@ a.twitter-follow-me:hover,
 
 .tagcloud a:hover,
 #footer.footer-dark .tagcloud a:hover {
-    background-color: #57B3DF;
+    background-color: #FF9900;
     color: #FFF;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
@@ -4754,7 +4754,7 @@ a.twitter-follow-me:hover,
     border-bottom-color: #222;
 }
 
-#footer.footer-dark .portfolio-item:hover .portfolio-title { border-bottom-color: #57B3DF; }
+#footer.footer-dark .portfolio-item:hover .portfolio-title { border-bottom-color: #FF9900; }
 
 
 /* ----------------------------------------------------------------
@@ -4809,7 +4809,7 @@ a.twitter-follow-me:hover,
 .widget-scroll-prev:hover,
 .widget-scroll-next:hover,
 #footer.footer-dark .widget-scroll-prev,
-#footer.footer-dark .widget-scroll-next { background-color: #57B3DF; }
+#footer.footer-dark .widget-scroll-next { background-color: #FF9900; }
 
 .testimonial-scroller .widget-scroll-prev,
 .testimonial-scroller .widget-scroll-next { top: 0; }
@@ -4827,7 +4827,7 @@ a.twitter-follow-me:hover,
     font-size: 12px;
     background-color: #E5E5E5;
     overflow: hidden;
-    border-top: 1px solid #57B3DF;
+    border-top: 1px solid #FF9900;
     color: #888;
     text-shadow: 1px 1px 1px #FFF;
 }
